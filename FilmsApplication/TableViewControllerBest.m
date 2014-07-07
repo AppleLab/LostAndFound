@@ -40,7 +40,7 @@
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
     
-    Title = [NSMutableArray arrayWithObjects:@"Best Film 1",@"Best Film 2",@"Best Film 3",@"Best Film 4", nil];
+   // Title = [NSMutableArray arrayWithObjects:@"Best Film 1",@"Best Film 2",@"Best Film 3",@"Best Film 4", nil];
     Number= [NSMutableArray arrayWithObjects: @"896666665643",@"8955356356",@"897656666", @"897656666", nil];
     Author = [NSMutableArray arrayWithObjects:@"author1",@"author2",@"author3",@"author3",  nil];
     Description = [NSMutableArray arrayWithObjects:@"Mongrereggrehhrgrhegerertdgstrhhedhs rhr", @"Men ireghresgehrgergnBlack",@"Bragreehrgertgsetrdhghrtydjnthxdgdrtjhve",@"Seven prtshdyrjsthgrtdyjhtgrhtdjyyjhgfxdounds",@"Matrihtrrtyjhtfgyfgx",  nil];
@@ -126,14 +126,15 @@
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
     if([[segue identifier] isEqualToString:@"ViewControllerSegue"]){
-    ViewController *VC = [[ViewController alloc] init];
-    VC = [segue destinationViewController];
-    NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
-    VC.author = [Author objectAtIndex:indexPath.row];
-    VC.number = [Number objectAtIndex:indexPath.row];
-    VC.description = [Description objectAtIndex:indexPath.row];
-    VC.value = [Title objectAtIndex:indexPath.row];
-    VC.img = [UIImage imageNamed:[NSString stringWithFormat:@"%d.jpg",indexPath.row]];
+        ViewController *VC = [[ViewController alloc] init];
+        VC = [segue destinationViewController];
+        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+        VC.author = [Author objectAtIndex:indexPath.row];
+        VC.number = [Number objectAtIndex:indexPath.row];
+        VC.description = [Description objectAtIndex:indexPath.row];
+        VC.value = [Title objectAtIndex:indexPath.row];
+        VC.img = [UIImage imageNamed:[NSString stringWithFormat:@"%d.jpg",indexPath.row]];
+      //  VC.dateText  = [dateFormatter  stringFromDate: [NSDate date]] ;
     }
     
 }

@@ -9,10 +9,13 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewC : UIViewController
-@property (weak, nonatomic) IBOutlet UILabel *label1;
+@property (weak, nonatomic) IBOutlet UITextField *desc1;
+@property (weak, nonatomic) IBOutlet UITextField *title1;
+@property (weak, nonatomic) IBOutlet UITextField *number1;
 @property (weak, nonatomic) IBOutlet UITextField *name1;
-@property (weak, nonatomic) IBOutlet UITextField *Title1;
-@property (weak, nonatomic) IBOutlet UITextField *Description1;
+
+
+
 - (IBAction)SendButton:(id)sender;
 
 @end

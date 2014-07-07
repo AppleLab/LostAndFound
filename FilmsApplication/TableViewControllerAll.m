@@ -39,6 +39,12 @@
 - (void) viewDidAppear:(BOOL)animated {
     [self.tableView reloadData ] ;
     Author = [MySingleton sharedInstance].nameS;
+   Number = [MySingleton sharedInstance].numberS;
+   Title = [MySingleton sharedInstance].titleS;
+    
+     Description = [MySingleton sharedInstance].descS;
+
+
 }
 
 
@@ -52,7 +58,7 @@
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
     
-    Title = [NSMutableArray arrayWithObjects:@"Monsters University",@"Men in Black",@"Brave",@"Seven pounds",@"Matrix", @"Monsters University",@"Men in Black",@"Brave",@"Seven pounds",@"Matrix",  nil];
+    //Title = [NSMutableArray arrayWithObjects:@"Monsters University",@"Men in Black",@"Brave",@"Seven pounds",@"Matrix", @"Monsters University",@"Men in Black",@"Brave",@"Seven pounds",@"Matrix",  nil];
     Number= [NSMutableArray arrayWithObjects: @"896666665643",@"8955356356",@"897656666",@"896666665643",@"8955356356",@"897656666",@"896666665643",@"8955356356",@"897656666",@"896666665643",nil];
     Author = [NSMutableArray arrayWithObjects:@"author1",@"author2",@"author3",@"author3",@"author1",@"author2",@"author3",@"author3",@"author1",@"author2",  nil];
     Description = [NSMutableArray arrayWithObjects:@"Mongrereggrehhrgrhegerertdgstrhhedhs rhr", @"Men ireghresgehrgergnBlack",@"Bragreehrgertgsetrdhghrtydjnthxdgdrtjhve",@"Seven prtshdyrjsthgrtdyjhtgrhtdjyyjhgfxdounds",@"Matrihtrrtyjhtfgyfgx", @"Mongrereggrehhrgrhegerertdgstrhhedhs rhr", @"Men ireghresgehrgergnBlack",@"Bragreehrgertgsetrdhghrtydjnthxdgdrtjhve",@"Seven prtshdyrjsthgrtdyjhtgrhtdjyyjhgfxdounds",@"Matrihtrrtyjhtfgyfgx", nil];

@@ -48,8 +48,20 @@
 */
 
 - (IBAction)SendButton:(id)sender {
-    NSString *string = self.name1.text;
-    [[MySingleton sharedInstance].nameS addObject:[NSString stringWithFormat:@"%@",string]];
+    NSString *name2 = self.name1.text;
+    [[MySingleton sharedInstance].nameS addObject:[NSString stringWithFormat:@"%@",name2]];
+    
+    NSString *number2 = self.number1.text;
+    [[MySingleton sharedInstance].numberS addObject:[NSString stringWithFormat:@"%@",number2]];
+    
+   NSString *title2 = self.title1.text;
+   [[MySingleton sharedInstance].titleS addObject:[NSString stringWithFormat:@"%@",title2]];
+    
+    
+    NSString *desc2 = self.desc1.text;
+    [[MySingleton sharedInstance].descS addObject:[NSString stringWithFormat:@"%@",desc2]];
+    
+    
     NSLog(@"%@",[MySingleton sharedInstance].nameS[0]);
 }
 @end

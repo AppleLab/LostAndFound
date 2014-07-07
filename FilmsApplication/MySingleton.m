@@ -12,10 +12,18 @@ static MySingleton *_sharedInstance ;
 @implementation MySingleton
 
 @synthesize nameS ;
+@synthesize numberS ;
+@synthesize titleS ;
+@synthesize descS ;
+
 
 - (id) init {
     self = [super init ] ;
     nameS = [[NSMutableArray alloc]init] ;
+    numberS = [[NSMutableArray alloc]init] ;
+    titleS = [[NSMutableArray alloc]init] ;
+    descS = [[NSMutableArray alloc]init] ;
+    
     return self ;
     
 

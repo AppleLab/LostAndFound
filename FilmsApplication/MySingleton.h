@@ -12,10 +12,20 @@
 {
     
   NSMutableArray *nameS;
+      NSMutableArray *numberS;
+      NSMutableArray *titleS;
+      NSMutableArray *descS;
+
     
+
 }
 
 @property NSMutableArray *nameS ;
+@property NSMutableArray *numberS ;
+@property NSMutableArray *titleS ;
+@property NSMutableArray *descS ;
+
+
 
 + (MySingleton *) sharedInstance;
 @end
