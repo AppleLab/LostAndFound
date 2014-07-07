@@ -75,14 +75,16 @@
 }
 */
 
-- (IBAction)Button:(id)sender {
+// - (IBAction)Button:(id)sender {
     
  //   NSString *string = self.title1.text;
 //    NSLog(@"%@",string);
-    NSString *string = self.label1.text;
+ //   NSString *string = self.label1.text;
    // NSLog(@"%@",string);
     
-    [listOfAll addObject:@"Martin7"];
-NSLog(@"%@", listOfAll);}
+  //  [listOfAll addObject:@"Martin7"];
+//NSLog(@"%@", listOfAll);
+//
+// }
     
 @end

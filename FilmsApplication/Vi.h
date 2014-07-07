@@ -9,10 +9,9 @@
 #import <UIKit/UIKit.h>
 
 @interface Vi : UIViewController <UITableViewDelegate,UITableViewDataSource >
-@property (weak, nonatomic) IBOutlet UILabel *label1;
-@property (weak, nonatomic) IBOutlet UITextField *title1;
 
-- (IBAction)Button:(id)sender;
+
+
 
 
 @end
