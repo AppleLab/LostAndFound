@@ -16,9 +16,10 @@
     NSMutableArray *Number;
     NSMutableArray *Description;
     NSMutableArray *Image;
+    NSMutableArray *date;
     NSDate *currentDate ;
     NSDateFormatter *dateFormatter;
-
+    
 }
 
 @end
@@ -53,9 +54,11 @@
     Number= [NSMutableArray arrayWithObjects: @"896666665643",@"8955356356",@"897656666",@"896666665643",@"8955356356",@"897656666",@"896666665643",@"8955356356",@"897656666",@"896666665643",nil];
     Author = [NSMutableArray arrayWithObjects:@"author1",@"author2",@"author3",@"author3",@"author1",@"author2",@"author3",@"author3",@"author1",@"author2",  nil];
     Description = [NSMutableArray arrayWithObjects:@"Mongrereggrehhrgrhegerertdgstrhhedhs rhr", @"Men ireghresgehrgergnBlack",@"Bragreehrgertgsetrdhghrtydjnthxdgdrtjhve",@"Seven prtshdyrjsthgrtdyjhtgrhtdjyyjhgfxdounds",@"Matrihtrrtyjhtfgyfgx", @"Mongrereggrehhrgrhegerertdgstrhhedhs rhr", @"Men ireghresgehrgergnBlack",@"Bragreehrgertgsetrdhghrtydjnthxdgdrtjhve",@"Seven prtshdyrjsthgrtdyjhtgrhtdjyyjhgfxdounds",@"Matrihtrrtyjhtfgyfgx", nil];
-//    date = [[NSMutableArray alloc]init] ;
- //   currentDate  = [NSDate date] ;
- //   [date addObject ]
+    date = [[NSMutableArray alloc]init] ;
+    currentDate  = [NSDate date] ;
+    [date addObject : currentDate] ;
+    dateFormatter  = [[NSDateFormatter alloc] init] ;
+    [dateFormatter setDateFormat: @ "dd MMM yyyy HH:mm"] ;
     
     
 }
@@ -70,14 +73,14 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-//#warning Potentially incomplete method implementation.
+    //#warning Potentially incomplete method implementation.
     // Return the number of sections.
     return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-//#warning Incomplete method implementation.
+    //#warning Incomplete method implementation.
     // Return the number of rows in the section.
     return Title.count;
 }
@@ -89,50 +92,50 @@
     
     // Configure the cell...
     
-   
+    
     cell.textLabel.text = [Title objectAtIndex:indexPath.row];
-        
+    
     return cell;
 }
 
 
 /*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
-}
-*/
+ // Override to support conditional editing of the table view.
+ - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
+ {
+ // Return NO if you do not want the specified item to be editable.
+ return YES;
+ }
+ */
 
 /*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
-}
-*/
+ // Override to support editing the table view.
+ - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
+ {
+ if (editingStyle == UITableViewCellEditingStyleDelete) {
+ // Delete the row from the data source
+ [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
+ } else if (editingStyle == UITableViewCellEditingStyleInsert) {
+ // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
+ }
+ }
+ */
 
 /*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath
-{
-}
-*/
+ // Override to support rearranging the table view.
+ - (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath
+ {
+ }
+ */
 
 /*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
+ // Override to support conditional rearranging of the table view.
+ - (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath
+ {
+ // Return NO if you do not want the item to be re-orderable.
+ return YES;
+ }
+ */
 
 
 #pragma mark - Navigation
@@ -150,7 +153,8 @@
     VC.description = [Description objectAtIndex:indexPath.row];
     VC.value = [Title objectAtIndex:indexPath.row];
     VC.img = [UIImage imageNamed:[NSString stringWithFormat:@"%d.jpg",indexPath.row]];
-
+    VC.dateText  = [dateFormatter  stringFromDate: [NSDate date]] ;
+    
 }
 
 

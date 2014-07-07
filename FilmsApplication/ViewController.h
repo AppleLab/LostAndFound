@@ -11,6 +11,8 @@
 @interface ViewController : UIViewController {
     IBOutlet UISwitch *switchOutlet;
 }
+@property (weak, nonatomic) IBOutlet UILabel *labeldate;
+@property (weak, nonatomic) IBOutlet UILabel *DateDescr;
 @property (weak, nonatomic) IBOutlet UITextView *desc;
 @property (weak, nonatomic) IBOutlet UILabel *auth;
 @property (weak, nonatomic) IBOutlet UILabel *numb;

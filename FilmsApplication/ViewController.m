@@ -24,6 +24,7 @@
     self.auth.text = _author;
     self.numb.text = _number;
     self.desc.text = _description;
+    self.labeldate.text = _dateText ;
     
 }
 
@@ -33,9 +34,9 @@
     // Dispose of any resources that can be recreated.
 }
 /*
-- (IBAction)switch:(UISwitch *)sender forEvent:(UIEvent *)event {
-    
-}
+ - (IBAction)switch:(UISwitch *)sender forEvent:(UIEvent *)event {
+ 
+ }
  */
 - (IBAction)switch:(id)sender {
     if (switchOutlet.on) {
