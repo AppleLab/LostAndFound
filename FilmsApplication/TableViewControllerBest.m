@@ -125,6 +125,7 @@
 {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
+    if([[segue identifier] isEqualToString:@"ViewControllerSegue"]){
     ViewController *VC = [[ViewController alloc] init];
     VC = [segue destinationViewController];
     NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
@@ -133,7 +134,7 @@
     VC.description = [Description objectAtIndex:indexPath.row];
     VC.value = [Title objectAtIndex:indexPath.row];
     VC.img = [UIImage imageNamed:[NSString stringWithFormat:@"%d.jpg",indexPath.row]];
-    
+    }
     
 }
 

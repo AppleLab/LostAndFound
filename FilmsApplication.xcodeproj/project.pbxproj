@@ -330,6 +330,7 @@
 		2361A8261962CC630070D980 /* TableViewControllerBest.m in Sources */ = {isa = PBXBuildFile; fileRef = 2361A8251962CC630070D980 /* TableViewControllerBest.m */; };
 		23915E3C1967E110002345AF /* Vi.m in Sources */ = {isa = PBXBuildFile; fileRef = 23915E3B1967E110002345AF /* Vi.m */; };
 		2398E336196A911E00D987CD /* ViewC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2398E335196A911E00D987CD /* ViewC.m */; };
+		23A56F62196AAB25004A1D14 /* MySingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = 23A56F61196AAB25004A1D14 /* MySingleton.m */; };
 		23DCF171196561B5000C2C5B /* Main in Resources */ = {isa = PBXBuildFile; fileRef = 23DCF16F196561B5000C2C5B /* Main */; };
 		23E4292D19656BF900A6B1C2 /* KabinetTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23E4292C19656BF900A6B1C2 /* KabinetTableViewController.m */; };
 /* End PBXBuildFile section */
@@ -677,6 +678,8 @@
 		23915E3B1967E110002345AF /* Vi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Vi.m; sourceTree = "<group>"; };
 		2398E334196A911E00D987CD /* ViewC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewC.h; sourceTree = "<group>"; };
 		2398E335196A911E00D987CD /* ViewC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewC.m; sourceTree = "<group>"; };
+		23A56F60196AAB25004A1D14 /* MySingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MySingleton.h; sourceTree = "<group>"; };
+		23A56F61196AAB25004A1D14 /* MySingleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MySingleton.m; sourceTree = "<group>"; };
 		23DCF170196561B5000C2C5B /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = Base; path = Base.lproj/Main; sourceTree = "<group>"; };
 		23E4292B19656BF900A6B1C2 /* KabinetTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KabinetTableViewController.h; sourceTree = SOURCE_ROOT; };
 		23E4292C19656BF900A6B1C2 /* KabinetTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KabinetTableViewController.m; sourceTree = SOURCE_ROOT; };
@@ -1055,6 +1058,8 @@
 				2361A7FB1962C8840070D980 /* AppDelegate.h */,
 				2361A7FC1962C8840070D980 /* AppDelegate.m */,
 				2361A7FE1962C8840070D980 /* Main.storyboard */,
+				23A56F60196AAB25004A1D14 /* MySingleton.h */,
+				23A56F61196AAB25004A1D14 /* MySingleton.m */,
 				23E4292B19656BF900A6B1C2 /* KabinetTableViewController.h */,
 				23E4292C19656BF900A6B1C2 /* KabinetTableViewController.m */,
 				23DCF16F196561B5000C2C5B /* Main */,
@@ -1510,6 +1515,7 @@
 				23915E3C1967E110002345AF /* Vi.m in Sources */,
 				2361A8031962C8840070D980 /* ViewController.m in Sources */,
 				2361A7FD1962C8840070D980 /* AppDelegate.m in Sources */,
+				23A56F62196AAB25004A1D14 /* MySingleton.m in Sources */,
 				2361A7F91962C8840070D980 /* main.m in Sources */,
 				2361A8231962CC470070D980 /* TableViewControllerAll.m in Sources */,
 				23E4292D19656BF900A6B1C2 /* KabinetTableViewController.m in Sources */,

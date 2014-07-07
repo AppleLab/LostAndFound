@@ -8,6 +8,7 @@
 
 #import "TableViewControllerAll.h"
 #import "ViewController.h"
+#import "MySingleton.h"
 
 @interface TableViewControllerAll () {
     NSArray *listOfAllFilms;
@@ -37,6 +38,7 @@
 
 - (void) viewDidAppear:(BOOL)animated {
     [self.tableView reloadData ] ;
+    Author = [MySingleton sharedInstance].nameS;
 }
 
 
@@ -145,6 +147,7 @@
 {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
+    if([[segue identifier] isEqualToString:@"ViewControllerSegue"]){
     ViewController *VC = [[ViewController alloc] init];
     VC = [segue destinationViewController];
     NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
@@ -154,7 +157,7 @@
     VC.value = [Title objectAtIndex:indexPath.row];
     VC.img = [UIImage imageNamed:[NSString stringWithFormat:@"%d.jpg",indexPath.row]];
     VC.dateText  = [dateFormatter  stringFromDate: [NSDate date]] ;
-    
+    }
 }
 
 

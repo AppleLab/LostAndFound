@@ -7,6 +7,7 @@
 //
 
 #import "ViewC.h"
+#import "MySingleton.h"
 
 @interface ViewC ()
 
@@ -46,4 +47,9 @@
 }
 */
 
+- (IBAction)SendButton:(id)sender {
+    NSString *string = self.name1.text;
+    [[MySingleton sharedInstance].nameS addObject:[NSString stringWithFormat:@"%@",string]];
+    NSLog(@"%@",[MySingleton sharedInstance].nameS[0]);
+}
 @end

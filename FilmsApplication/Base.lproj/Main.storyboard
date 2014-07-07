@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="wdn-TZ-DAg">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="12F45" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="wdn-TZ-DAg">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
@@ -21,7 +21,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="sYb-ru-u3z" kind="push" id="j4V-II-pF3"/>
+                                    <segue destination="sYb-ru-u3z" kind="push" identifier="ViewControllerSegue" id="j4V-II-pF3"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -181,7 +181,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="sYb-ru-u3z" kind="push" id="i3z-DL-h2g"/>
+                                    <segue destination="sYb-ru-u3z" kind="push" identifier="ViewControllerSegue" id="i3z-DL-h2g"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -200,7 +200,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="riP-bL-ZyB" kind="push" id="s60-yb-m1d"/>
+                                    <segue destination="riP-bL-ZyB" kind="push" id="8uZ-Bp-mKc"/>
                                 </connections>
                             </button>
                         </barButtonItem>
@@ -309,7 +309,8 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="Button:" destination="riP-bL-ZyB" eventType="touchUpInside" id="2WY-FI-xzJ"/>
+                                    <action selector="SendButton:" destination="riP-bL-ZyB" eventType="touchUpInside" id="Bz4-88-EQW"/>
+                                    <segue destination="wdn-TZ-DAg" kind="push" id="4Tf-Ev-QwE"/>
                                 </connections>
                             </button>
                         </barButtonItem>
@@ -317,13 +318,13 @@
                     <connections>
                         <outlet property="Description1" destination="tSK-SL-h2N" id="F50-Xm-pOe"/>
                         <outlet property="Title1" destination="8rp-vg-daR" id="sF1-G2-Ebw"/>
-                        <outlet property="label1" destination="K5E-mT-gLS" id="ot0-QY-cpb"/>
-                        <outlet property="title1" destination="8rp-vg-daR" id="Ag0-1d-Q5l"/>
+                        <outlet property="label1" destination="Bhm-xw-3ZH" id="TYg-T6-55O"/>
+                        <outlet property="name1" destination="oxN-dz-et1" id="xzA-TS-Ems"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ka9-qi-bEs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="477" y="978"/>
+            <point key="canvasLocation" x="-1329" y="1114"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="p9W-WK-SYb">
@@ -355,7 +356,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lpz-Lb-4bo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1658" y="454"/>
+            <point key="canvasLocation" x="-1286" y="458"/>
         </scene>
     </scenes>
     <resources>
@@ -371,7 +372,7 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="s60-yb-m1d"/>
+        <segue reference="sAM-vP-o6T"/>
         <segue reference="i3z-DL-h2g"/>
     </inferredMetricsTieBreakers>
 </document>
